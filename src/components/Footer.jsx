@@ -1,9 +1,12 @@
 import React from "react";
+import "../style.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <p>&copy; 2025 Nice Iradukunda. All rights reserved.</p>
+    <footer className="footer-new">
+      <div className="footer-new-container">
+        <p>© {new Date().getFullYear()} Nice Iradukunda. All rights reserved.</p>
+      </div>
     </footer>
   );
 };

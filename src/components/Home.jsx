@@ -7,17 +7,19 @@ const Home = () => {
         <div className="intro">
           <h1>Hi, I’m <span>Nice IRADUKUNDA</span></h1>
           <p>
-            I’m a <strong>Full-Stack Developer</strong> who loves <br />
-            solving real-world problems through <br />
-            code. I build clean, user-friendly <br />
-            applications with powerful backend <br />
-            systems.
+          
+          I’m a <strong>Full-Stack Developer</strong> who has built real <br /> applications from scratch using modern web <br />technologies. Strong ability to learn fast, break <br /> down  complex problems, and deliver working <br /> solutions. Seeking a first industry opportunity to <br />make a meaningful impact while continuing to <br /> level up technical skills.
+
+            
           </p>
 
           <div className="home-buttons">
             <a href="#projects" className="btn"><i className="fas fa-eye"></i> View My Work</a>
             <a href="https://github.com/Nice-91" target="_blank" rel="noreferrer" className="btn"><i className="fab fa-github"></i> GitHub</a>
-            <a href="Nice_CV.pdf" className="btn cv-btn"><i className="fas fa-file-download"></i> Download CV</a>
+            <a href="/Nice_CV.pdf" download className="btn cv-btn">
+  <i className="fas fa-file-download"></i> Download CV
+</a>
+
             <a href="https://www.linkedin.com/in/nice-iradukunda-192036353/" target="_blank" rel="noreferrer" className="btn"><i className="fab fa-linkedin"></i> LinkedIn</a>
           </div>
         </div>

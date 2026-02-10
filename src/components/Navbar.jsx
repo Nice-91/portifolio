@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        {/* <h1 className="logo">Nice Iradukunda</h1> -- removed */}
+        {/* <h1 className="logo">Nice Iradukunda</h1>  */}
         <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>

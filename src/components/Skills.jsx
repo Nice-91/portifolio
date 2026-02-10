@@ -12,6 +12,7 @@ const Skills = () => {
     "JWT Authentication",
     "SQLite, PostgreSQL",
     "Git , GitHub",
+    "Basic UI/UX design principles",
     
   ];
 
@@ -20,10 +21,11 @@ const Skills = () => {
     "Render",
     "Vercel",
     "Postman",
-    "Docker",
+    "Docker (basics)",
     "GitHub Actions (CI/CD)",
     "Google Meet",
     "Zoom",
+    "Figma",
   ];
 
   const softSkills = [

@@ -1,9 +1,9 @@
-/* ===================== Reset ===================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -18,7 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===================== Navbar ===================== */
+/*Navbar */
 .navbar {
   background-color: #006666;
   padding: 20px 0;
@@ -64,6 +64,7 @@ body {
   justify-content: center;
   width: 100vw;
   padding: 10px 20px;
+  height: 100vh;
 }
 
 .home-container {
@@ -85,7 +86,7 @@ body {
 .intro h1 {
   font-size: 2rem;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro h1 span {
@@ -94,10 +95,11 @@ body {
 
 .intro p {
   margin: 20px 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 30px;
   text-align: left;
   color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .home-buttons {
@@ -118,6 +120,9 @@ body {
   font-weight: bold;
   font-size: 0.9rem;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-buttons .btn i {
@@ -140,77 +145,189 @@ body {
   width: 100%;
   max-width: 350px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   height: auto;
   margin-bottom: 30px;
   display: block;
   object-fit: cover;
 }
 
-/* ===================== Projects Section ===================== */
-.projects-section {
-  text-align: center;
-  width: 100vw;
-  margin-bottom: 40px;
-  padding: 0px 20px 60px 20px;
+
+/* Projects Section */
+
+.projects-modern-section {
+  .projects-modern-section {
+    width: 100vw;
+    background: #ffffff;
+    padding: 100px 0;
+    overflow: hidden;
+  
+    /* scroll-margin-top: 80px; navbar height */
+  }
+  
+  
 }
 
-.projects-section h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  max-width: 1000px;
-  width: 100%;
+.projects-modern-container {
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 6%;
+  
 }
 
-.project-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
+/* Header */
+.projects-modern-header {
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
+  /* margin-bottom: 30px; */
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.projects-badge-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border-radius: 30px;
+  background: rgba(0, 102, 102, 0.1);
+  color: #006666;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.project-card img {
+.projects-modern-title {
+  font-size: 3rem;
+  color: #000;
+  font-weight: 800;
+  
+}
+
+.highlight-gold {
+  background: linear-gradient(135deg, #006666, #004d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-modern-subtitle {
+  color: #555;
+  max-width: 700px;
+  margin: 15px auto 0;
+}
+
+/* Grid */
+.projects-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.project-modern-card {
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+.project-modern-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image */
+.project-modern-image {
   width: 100%;
-  height: auto;
+  height: 260px;
+  background: #f5f5f5;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.project-card h3 {
-  color: #1a1a1a;
-  margin: 10px 0;
-  font-family: 'Montserrat', sans-serif;
+.project-modern-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
 }
 
-.project-card p {
-  padding: 0 10px 10px;
-  font-size: 0.9rem;
-  color: #444;
-  font-family: sans-serif;
+/* Content */
+.project-modern-content {
+  padding-top: 20px;
+  font-family:'Montserrat', sans-serif; 
 }
 
-/* ===================== Skills Section ===================== */
+.project-modern-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif; ;
+}
+
+.project-modern-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.project-category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #008080;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+/* Buttons */
+.project-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.project-btn {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.live-btn {
+  background: #008080;
+  color: #fff;
+}
+
+.live-btn:hover {
+  background: #004d4d;
+}
+
+.github-btn {
+  border: 1px solid #008080;
+  color: #006666;
+}
+
+.github-btn:hover {
+  background: #006666;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projects-modern-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-modern-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*  Skills Section  */
 .skills-section {
   color: black;
-  padding: 60px 20px;
+  padding: 120px 20px;
 }
 
 .skills-section h2 {
@@ -218,7 +335,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .skills-container {
@@ -242,7 +359,7 @@ body {
 
 .skill-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .skill-card h3 {
@@ -275,158 +392,372 @@ body {
   color: #fff;
 }
 
-/* ===================== Contact Section ===================== */
+
+/* Contact Section */
 .contact-section {
-  padding: 60px 20px;
+  position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.contact-section h2 {
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-flex {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.contact-info, .social-profiles, .quick-links {
-  flex: 1;
-  min-width: 250px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  margin-left: 95px;
-}
-
-.contact-info h3, .social-profiles h3, .quick-links h3 {
-  color: #008080;
-  margin-bottom: 15px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.contact-info p, .social-profiles a, .quick-links a {
-  margin-bottom: 12px;
-  font-size: 1.05rem;
-  color: #333;
-  text-decoration: none;
-  font-family: sans-serif;
+  background: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+  padding: 50px 0 40px;
+  margin: 0;
+  overflow: hidden;
+  min-height: 50vh;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 
-.contact-info p i, .social-profiles a i, .quick-links a i {
-  margin-right: 10px;
-  color: #008080;
-}
-
-/* Collab text */
-.collab {
-  margin-top: 30px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  font-family: sans-serif;
-}
-
-/* ===================== Footer ===================== */
-footer {
-  padding: 20px;
-  background: #006666;
-  color: #fff;
-  text-align: center;
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
   width: 100%;
+  box-sizing: border-box;
 }
 
-/* ===================== Responsive ===================== */
-@media screen and (max-width: 992px) {
-  .home-container {
-    flex-direction: column;
-    text-align: center;
+/* Main Title */
+.contact-main-title {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  color: #000;
+  margin-bottom: 35px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Three Column Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-bottom: 30px;
+  align-items: start;
+  margin-left: 120px;
+}
+
+/* Column Styling */
+.contact-column {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-column-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #008080;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Info List */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #333;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+}
+
+.contact-info-item i {
+  font-size: 1.15rem;
+  color: #008080;
+  width: 24px;
+  min-width: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.contact-info-item a,
+.contact-info-item span {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.contact-info-item:hover a {
+  color: #006666;
+  padding-left: 5px;
+}
+
+/* Bottom CTA */
+.contact-cta {
+  text-align: center;
+  padding: 25px 20px 0;
+  margin-top: 20px;
+}
+
+.contact-cta p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive */
+
+
+@media (max-width: 1024px) {
+  .contact-section {
+    min-height: auto;
+    padding: 45px 0 35px;
   }
 
-  .photo {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+  .contact-container {
+    max-width: 900px;
+    padding: 0 30px;
   }
 
-  .photo img {
-    max-width: 300px;
+  .contact-main-title {
+    font-size: 1.875rem;
+    margin-bottom: 30px;
   }
 
-  .projects-container {
+  .contact-grid {
+    gap: 40px;
+  }
+
+  .contact-column-title {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  .contact-info-item {
+    font-size: 0.9rem;
+    gap: 11px;
+  }
+
+  .contact-info-item i {
+    font-size: 1.1rem;
+    width: 22px;
+    min-width: 22px;
+  }
+
+  .contact-cta p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 0 30px;
+  }
+
+  .contact-container {
+    padding: 0 25px;
+  }
+
+  .contact-main-title {
+    font-size: 1.75rem;
+    margin-bottom: 28px;
+  }
+
+  .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .contact-flex {
-    flex-direction: column;
-    text-align: center;
     gap: 30px;
+    margin-bottom: 25px;
   }
 
-  .contact-info, .social-profiles, .quick-links {
-    padding: 0;
-    margin: 0 auto;
+  .contact-column {
     text-align: center;
-  }
-
-  .contact-info p, .social-profiles a, .quick-links a {
-    justify-content: center;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .home-buttons {
-    grid-template-columns: 1fr;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
     width: 100%;
   }
 
-  .intro h1 {
-    font-size: 1.8rem;
+  .contact-column-title {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
   }
 
-  .intro p {
-    font-size: 1.1rem;
+  .contact-info-list {
+    align-items: flex-start;
+    width: 100%;
   }
 
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
+  .contact-info-item {
+    justify-content: flex-start;
+    text-align: left;
   }
 
-  .skill-card {
-    width: 90%;
+  .contact-info-item i {
+    margin-top: 3px;
   }
 
+  .contact-cta {
+    padding: 22px 20px 0;
+  }
+
+  .contact-cta p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
   .contact-section {
-    padding: 40px 10px;
+    padding: 35px 0 25px;
   }
 
-  .contact-section h2 {
+  .contact-container {
+    padding: 0 20px;
+  }
+
+  .contact-main-title {
     font-size: 1.5rem;
+    margin-bottom: 25px;
   }
 
-  .contact-section p, .social-profiles a, .quick-links a {
-    font-size: 0.95rem;
+  .contact-grid {
+    gap: 25px;
   }
 
-  .nav-links a {
-    font-size: 0.85rem;
+  .contact-column {
+    max-width: 100%;
+  }
+
+  .contact-column-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-info-list {
+    gap: 12px;
+  }
+
+  .contact-info-item {
+    font-size: 0.875rem;
+    gap: 10px;
+  }
+
+  .contact-info-item i {
+    font-size: 1.05rem;
+    width: 20px;
+    min-width: 20px;
+  }
+
+  .contact-cta {
+    padding: 20px 15px 0;
+  }
+
+  .contact-cta p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+  .contact-container {
+    padding: 0 15px;
+  }
+
+  .contact-main-title {
+    font-size: 1.375rem;
+  }
+
+  .contact-column-title {
+    font-size: 1.05rem;
+  }
+
+  .contact-info-item {
+    font-size: 0.8125rem;
+  }
+
+  .contact-cta p {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Footer */
+.footer-new {
+  position: relative;
+  width: 100vw;
+  background: #006666;
+  color: #fff;
+  padding: 18px 0;
+  margin: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-new-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+
+.footer-new p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-new {
+    padding: 16px 0;
+  }
+
+  .footer-new-container {
+    padding: 0 4%;
+  }
+
+  .footer-new p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-new {
+    padding: 14px 0;
+  }
+
+  .footer-new p {
+    font-size: 0.8125rem;
   }
 }

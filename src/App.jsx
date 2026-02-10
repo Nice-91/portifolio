@@ -5,7 +5,7 @@ import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
-import "./style.css"; // your CSS file in src/
+import "./style.css"; 
 
 
 
@@ -27,7 +27,7 @@ function App() {
    (
     <>
       <Navbar />
-      {/* Other sections like Hero, Skills, Projects, etc. */}
+   
     </>
   );
 }

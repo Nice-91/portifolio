@@ -1,33 +1,97 @@
 import React from "react";
+import "../style.css";
 
 const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Chaste Essentials",
+      description: "A full-stack e-commerce web application for online shopping.",
+      image: "/images/chaste.jpeg",
+      category: "Web Application",
+      link: "https://chaste-essentialss.vercel.app/",
+      github: "https://github.com/Nice-91/Chaste-essentialss",
+    },
+    {
+      id: 2,
+      title: "Sky Sense",
+      description:
+        "A responsive weather app showing real-time weather and forecasts.",
+      image: "/images/weather.jpeg",
+      category: "Weather App",
+      link: "https://skysense-weatherapp.vercel.app/",
+      github: " https://github.com/Nice-91/skysense_weatherapp/",
+    },
+    {
+      id: 3,
+      title: "Artwork",
+      description:
+        "A full-stack web application for showcasing creative projects and managing quote requests.",
+      image: "/images/artwork.jpeg",
+      category: "Creative Platform",
+      link: "https://artwork-dun.vercel.app/",
+      github: "https://github.com/Nice-91/Artwork/ ",
+    },
+  ];
+
   return (
-    <section id="projects" className="projects-section">
-      <h2>PROJECTS</h2>
-      <div className="projects-container">
-        <a href="https://greenbite-eight.vercel.app/" target="_blank" rel="noreferrer" className="project-card">
-          <img src="/images/greenbite.jpeg" alt="Green Bite" />
-          <h3>Green Bite</h3>
-          <p>A responsive HTML/CSS web app showcasing a healthy food brand.</p>
-        </a>
+    <section className="projects-modern-section" id="projects">
+      <div className="projects-modern-container">
+        {/* Header */}
+        <div className="projects-modern-header">
+        
+          <h2 className="projects-modern-title">
+            My Recent <span className="highlight-gold">Projects</span>
+          </h2>
+          <p className="projects-modern-subtitle">
+            Explore some of my latest work showcasing creativity and technical expertise
+          </p>
+        </div>
 
-        <a href="https://skysense-weatherapp.vercel.app/" target="_blank" rel="noreferrer" className="project-card">
-          <img src="/images/weather.jpeg" alt="Weather App" />
-          <h3>Sky Sense</h3>
-          <p>A responsive Weather App showing real-time weather and forecasts.</p>
-        </a>
+        {/* Projects Grid */}
+        <div className="projects-modern-grid">
+          {projects.map((project, index) => (
+            <div
+              key={project.id}
+              className="project-modern-card"
+              data-index={index}
+            >
+              {/* Image */}
+              <div className="project-modern-image">
+                <img src={project.image} alt={project.title} />
+              </div>
 
-        <a href="https://movie-orcin-psi.vercel.app/" target="_blank" rel="noreferrer" className="project-card">
-      <img src="/images/movie.jpeg" alt="Movie App" />
-      <h3>Movie App</h3>
-      <p>A movie app where users search movies, view details and rate movies.</p>
-    </a>
+              {/* Content */}
+              <div className="project-modern-content">
+                <h3 className="project-modern-title">{project.title}</h3>
+                <p className="project-modern-desc">{project.description}</p>
 
-        <a href="https://agriprice-info-site.vercel.app/" target="_blank" rel="noreferrer" className="project-card">
-          <img src="/images/agriprice.jpeg" alt="AgriPrice" />
-          <h3>AgriPrice</h3>
-          <p>A full-stack website for connecting buyers and sellers easily.</p>
-        </a>
+                <p className="project-category">{project.category}</p>
+
+                {/* Buttons */}
+                <div className="project-actions">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-btn live-btn"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-btn github-btn"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
