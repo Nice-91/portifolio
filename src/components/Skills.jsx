@@ -13,7 +13,7 @@ const Skills = () => {
     "SQLite, PostgreSQL",
     "Git , GitHub",
     "Basic UI/UX design principles",
-    "Data Structures, Algorithms, Algorithmic Thinking, Object-Oriented Programming (OOP), Software Design Patterns",
+    "Computer Science Fundamentals: Data Structures, Algorithms, Algorithmic Thinking, Object-Oriented Programming (OOP), Software Design Patterns",
 
     
   ];
