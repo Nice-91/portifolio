@@ -16,9 +16,17 @@ const Home = () => {
           <div className="home-buttons">
             <a href="#projects" className="btn"><i className="fas fa-eye"></i> View My Work</a>
             <a href="https://github.com/Nice-91" target="_blank" rel="noreferrer" className="btn"><i className="fab fa-github"></i> GitHub</a>
-            <a href="/Nice_CV.pdf" download className="btn cv-btn">
-  <i className="fas fa-file-download"></i> Download CV
+            {/* <a href="/Nice_CV.pdf" download className="btn cv-btn"> */}
+            <a
+  href="/assets/Nice-Iradukunda-cv (2).pdf"
+  download
+  className="btn cv-btn"
+>
+  <i className="fas fa-file-download"></i> Download cv
 </a>
+
+
+
 
             <a href="https://www.linkedin.com/in/nice-iradukunda-192036353/" target="_blank" rel="noreferrer" className="btn"><i className="fab fa-linkedin"></i> LinkedIn</a>
           </div>

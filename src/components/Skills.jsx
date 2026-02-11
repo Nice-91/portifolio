@@ -13,6 +13,8 @@ const Skills = () => {
     "SQLite, PostgreSQL",
     "Git , GitHub",
     "Basic UI/UX design principles",
+    "Data Structures, Algorithms, Algorithmic Thinking, Object-Oriented Programming (OOP), Software Design Patterns",
+
     
   ];
 
@@ -32,10 +34,11 @@ const Skills = () => {
     "Self-motivated learner",
     "Strong problem-solving skills",
     "Attention to detail",
-    "Good communication",
-    "Team collaboration",
+    " Effective communication",
+    "collaboration",
     "Adaptability",
-    "Fast learner & continuous improvement mindset",
+    "continuous improvement ",
+    "Lifelong Learning",
   ];
 
   const SkillCard = ({ title, skills }) => (
